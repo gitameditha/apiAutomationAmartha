@@ -4,13 +4,14 @@ Automation testing API using Mocha & Chai Framework
 
 
 ## Requirement
-
+```
+```
 
 ## Installation
 
 - Set up node
 
-```bash
+```
 npm install
 ```
 
@@ -19,64 +20,31 @@ npm install
 cp env.sample .env
 ```
 ```
-
+BASE_URL = https://jsonplaceholder.typicode.com
 ```
-
-## Checking device already connected on laptop
-
-```
-adb devices
-```
-
-## Run Appium Server
-
- Go to Appium desktop
- Start Server
     
-## Checking enviroment ($JAVA_HOME, $ANDROID_HOME) on laptop
-
-appium-doctor
-
-## Inspect element tools
-1. Appium inspector
-- Go to Appium desktop
-- Start Server
-- Start Inspector Session
-- Create Desired capabilities and Start Session
-
-Desired capabilities
-
-```
-{
-  "deviceName": "Nexus_9_API_28",
-  "platformName": "Android",
-  "app": "C:\\Users\\gitam\\Downloads\\TenjiApp\\TenjiApp.apk"
-}
-```
-
 ## How To Run
 ```
-npm run cucumberjs
+npm run test-api
+npm run reports
 ```
 
 ## Structure
-```
-features                # Test directory (alternatively `features` or `test`)
-├── reports             # Report files
+```bash
+api                     # Test directory 
+├── data                # data files directory
 ├── step_definitions    # Step definition files
-├── support             # Support files
-│   ├── activity        # Activity list
+├── helper              # files for response code etc
+|── activity            # Activity list "BARU SAMPE SINI"
 │   ├── data            # Data test
 │   ├── objects         # Page object files
 │   └── hook            # Hook files (before - after test)
 └── sample.feature      # Test files using feature format (cucumber)
-helpers                 # for desired capabilites
-apps                    # app
+node_modules            # for desired capabilites
+reports                 # app
+|__mochawesome          # report assets
 ```
 
-## Apps
-
-- apps/sample_android.apk
 
 
 ## Helpers

@@ -1,6 +1,6 @@
 node_modules
 .env
-reports/mochawesome
+reports/*
 !reports/mochawesome/.gitkeep
 
 package-lock.json

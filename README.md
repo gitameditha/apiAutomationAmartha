@@ -53,3 +53,7 @@ report can be two type :
 
 ## Notes
 - this project use Windows set up, so need to simple set up if wanna use unix
+
+## Answer the Question
+1. To make sure this end-point have correct data type I use Json schema
+2. To make sure this end-point get a correct response I use assertion

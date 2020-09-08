@@ -29,5 +29,14 @@ Feature: eligible user can order using voucher
     And I input voucher code 
     Then voucher not redempt
     
+    Scenario: As User I should not be able to order using voucher if I chose corier other than JNE
+    Given I Log in using eligible user
+    When I select sku
+    And I checkout
+    And I choose  Other than JNE courier
+    And I select 'metode pembayaran' using alfamart
+    And I input voucher code 
+    Then voucher not redempt
+
 
     

@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2020-07-29T16:37:43.469Z",
-    "end": "2020-07-29T16:37:44.358Z",
-    "duration": 889,
+    "start": "2020-08-03T03:23:23.811Z",
+    "end": "2020-08-03T03:23:24.980Z",
+    "duration": 1169,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "26fd85f7-95df-4b0e-afe1-03b7f60dc64e",
+    "uuid": "38f49a43-e328-4b1a-8ecf-da2cd7c5ab6b",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,7 +28,7 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "1981c025-2807-41b3-8a9b-9e3e6a591c93",
+        "uuid": "2543be1e-dac3-4acc-8405-44ef50baad8c",
         "title": "@getvalidationtag As a User, I should be able to see data",
         "fullFile": "D:\\project\\Interview\\bukalapak_api\\api\\test\\validation_test.js",
         "file": "\\api\\test\\validation_test.js",
@@ -37,14 +37,14 @@
             "title": "\"before all\" hook: #hook",
             "fullTitle": "@getvalidationtag As a User, I should be able to see data \"before all\" hook: #hook",
             "timedOut": false,
-            "duration": 3,
+            "duration": 1,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "",
             "err": {},
             "isRoot": false,
-            "uuid": "0752d68e-09cd-41e6-8daf-eeb4e59eb2f8",
+            "uuid": "fff90881-d10e-4fa5-b89a-baa0215b65dd",
             "isHook": true,
             "skipped": false
           }
@@ -55,7 +55,7 @@
             "title": "@get As a User, I should be able to see data schema",
             "fullTitle": "@getvalidationtag As a User, I should be able to see data @get As a User, I should be able to see data schema",
             "timedOut": false,
-            "duration": 219,
+            "duration": 335,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -64,7 +64,7 @@
             "code": "const response = await page.getValidation(payload);\nassert(response.status).to.equal(code.successOk);\n        assert(response.body).to.be.jsonSchema(schema);",
             "err": {},
             "isRoot": false,
-            "uuid": "c7ddb60f-354f-4121-84a5-5e0aa0f0f695",
+            "uuid": "fd82bc33-d6f9-453e-823d-2e43863a003b",
             "isHook": false,
             "skipped": false
           },
@@ -72,7 +72,7 @@
             "title": "@post As user, I should be able to post data",
             "fullTitle": "@getvalidationtag As a User, I should be able to see data @post As user, I should be able to post data",
             "timedOut": false,
-            "duration": 592,
+            "duration": 811,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -81,20 +81,20 @@
             "code": "const response = await page.postData(payload);\nassert(response.status).to.equal(code.successCreated);\n        assert(response.body).to.be.jsonSchema(schemaCreated);",
             "err": {},
             "isRoot": false,
-            "uuid": "1d640e66-0aa7-453a-ac6c-3e18cd151fc7",
+            "uuid": "93daadd3-3f59-4ce1-a2e7-d4e4e7e9446c",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "c7ddb60f-354f-4121-84a5-5e0aa0f0f695",
-          "1d640e66-0aa7-453a-ac6c-3e18cd151fc7"
+          "fd82bc33-d6f9-453e-823d-2e43863a003b",
+          "93daadd3-3f59-4ce1-a2e7-d4e4e7e9446c"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 811,
+        "duration": 1146,
         "root": false,
         "rootEmpty": false,
         "_timeout": 180000

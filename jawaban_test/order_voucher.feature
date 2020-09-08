@@ -38,5 +38,34 @@ Feature: eligible user can order using voucher
     And I input voucher code 
     Then voucher not redempt
 
+    Scenario: As eligible User I want to pay order less than 'tagihan'
+    Given I Log in using eligible user
+    When I select sku
+    And I checkout
+    And I choose JNE courier
+    And I select 'metode pembayaran' using Alfamart
+    And I input voucher code
+    Then voucher redempt
+    And shown rebate value
+    When tap 'Bayar'
+    Then direct to detail order page
+    And shown status tagihan 'Menuggu pembayaran'
+    When I pay less than tagihan
+    Then status not change
+
+    Scenario: As eligible User I want to pay order more than 'tagihan'
+    Given I Log in using eligible user
+    When I select sku
+    And I checkout
+    And I choose JNE courier
+    And I select 'metode pembayaran' using Alfamart
+    And I input voucher code
+    Then voucher redempt
+    And shown rebate value
+    When tap 'Bayar'
+    Then direct to detail order page
+    And shown status tagihan 'Menuggu pembayaran'
+    When I pay more than tagihan
+    Then status not change
 
     

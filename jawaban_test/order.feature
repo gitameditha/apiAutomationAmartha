@@ -1,8 +1,8 @@
-Feature: eligible user can order using voucher
+Feature: user can order
 
     # ensure voucher feature work
 
-    Scenario: As eligible User I should be able to order using voucher
+    Scenario: As eligible User I want to order using voucher
     Given I Log in using eligible user
     When I select sku
     And I checkout

@@ -5,109 +5,136 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2020-08-03T03:23:23.811Z",
-    "end": "2020-08-03T03:23:24.980Z",
-    "duration": 1169,
+    "start": "2023-03-28T05:08:41.863Z",
+    "end": "2023-03-28T05:08:42.884Z",
+    "duration": 1021,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
-    "hasSkipped": false,
-    "passPercentClass": "success",
-    "pendingPercentClass": "danger"
+    "hasSkipped": false
   },
-  "suites": {
-    "uuid": "38f49a43-e328-4b1a-8ecf-da2cd7c5ab6b",
-    "title": "",
-    "fullFile": "",
-    "file": "",
-    "beforeHooks": [],
-    "afterHooks": [],
-    "tests": [],
-    "suites": [
-      {
-        "uuid": "2543be1e-dac3-4acc-8405-44ef50baad8c",
-        "title": "@getvalidationtag As a User, I should be able to see data",
-        "fullFile": "D:\\project\\Interview\\bukalapak_api\\api\\test\\validation_test.js",
-        "file": "\\api\\test\\validation_test.js",
-        "beforeHooks": [
-          {
-            "title": "\"before all\" hook: #hook",
-            "fullTitle": "@getvalidationtag As a User, I should be able to see data \"before all\" hook: #hook",
-            "timedOut": false,
-            "duration": 1,
-            "pass": false,
-            "fail": false,
-            "pending": false,
-            "code": "",
-            "err": {},
-            "isRoot": false,
-            "uuid": "fff90881-d10e-4fa5-b89a-baa0215b65dd",
-            "isHook": true,
-            "skipped": false
-          }
-        ],
-        "afterHooks": [],
-        "tests": [
-          {
-            "title": "@get As a User, I should be able to see data schema",
-            "fullTitle": "@getvalidationtag As a User, I should be able to see data @get As a User, I should be able to see data schema",
-            "timedOut": false,
-            "duration": 335,
-            "state": "passed",
-            "speed": "slow",
-            "pass": true,
-            "fail": false,
-            "pending": false,
-            "code": "const response = await page.getValidation(payload);\nassert(response.status).to.equal(code.successOk);\n        assert(response.body).to.be.jsonSchema(schema);",
-            "err": {},
-            "isRoot": false,
-            "uuid": "fd82bc33-d6f9-453e-823d-2e43863a003b",
-            "isHook": false,
-            "skipped": false
-          },
-          {
-            "title": "@post As user, I should be able to post data",
-            "fullTitle": "@getvalidationtag As a User, I should be able to see data @post As user, I should be able to post data",
-            "timedOut": false,
-            "duration": 811,
-            "state": "passed",
-            "speed": "slow",
-            "pass": true,
-            "fail": false,
-            "pending": false,
-            "code": "const response = await page.postData(payload);\nassert(response.status).to.equal(code.successCreated);\n        assert(response.body).to.be.jsonSchema(schemaCreated);",
-            "err": {},
-            "isRoot": false,
-            "uuid": "93daadd3-3f59-4ce1-a2e7-d4e4e7e9446c",
-            "isHook": false,
-            "skipped": false
-          }
-        ],
-        "suites": [],
-        "passes": [
-          "fd82bc33-d6f9-453e-823d-2e43863a003b",
-          "93daadd3-3f59-4ce1-a2e7-d4e4e7e9446c"
-        ],
-        "failures": [],
-        "pending": [],
-        "skipped": [],
-        "duration": 1146,
-        "root": false,
-        "rootEmpty": false,
-        "_timeout": 180000
-      }
-    ],
-    "passes": [],
-    "failures": [],
-    "pending": [],
-    "skipped": [],
-    "duration": 0,
-    "root": true,
-    "rootEmpty": true,
-    "_timeout": 180000
-  },
-  "copyrightYear": 2020
+  "results": [
+    {
+      "uuid": "693ae2af-26d1-46f5-bdbe-2e7d922107aa",
+      "title": "",
+      "fullFile": "/Users/gitameditha/Documents/test/AutomationApiMochaChai/api/test/validation_test.js",
+      "file": "/api/test/validation_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "eeec332a-11ac-48a3-8584-341b4f5de068",
+          "title": "@getvalidationtag As a User, I should be able to see data",
+          "fullFile": "/Users/gitameditha/Documents/test/AutomationApiMochaChai/api/test/validation_test.js",
+          "file": "/api/test/validation_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: #hook in \"@getvalidationtag As a User, I should be able to see data\"",
+              "fullTitle": "@getvalidationtag As a User, I should be able to see data \"before all\" hook: #hook in \"@getvalidationtag As a User, I should be able to see data\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "24794423-ec0d-4137-ae7d-ac139313a665",
+              "parentUUID": "eeec332a-11ac-48a3-8584-341b4f5de068",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "@get As a User, I should be able to see data schema",
+              "fullTitle": "@getvalidationtag As a User, I should be able to see data @get As a User, I should be able to see data schema",
+              "timedOut": false,
+              "duration": 193,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await page.getValidation(payload);\nassert(response.status).to.equal(code.successOk);\n        assert(response.body).to.be.jsonSchema(schema);",
+              "err": {},
+              "uuid": "fdee68cf-1a09-4dd4-8324-70145c2f7250",
+              "parentUUID": "eeec332a-11ac-48a3-8584-341b4f5de068",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "@post As user, I should be able to post data",
+              "fullTitle": "@getvalidationtag As a User, I should be able to see data @post As user, I should be able to post data",
+              "timedOut": false,
+              "duration": 811,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await page.postData(payload);\nassert(response.status).to.equal(code.successCreated);\n        assert(response.body).to.be.jsonSchema(schemaCreated);",
+              "err": {},
+              "uuid": "4519b603-fea0-43de-a755-ac9f94438ba8",
+              "parentUUID": "eeec332a-11ac-48a3-8584-341b4f5de068",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fdee68cf-1a09-4dd4-8324-70145c2f7250",
+            "4519b603-fea0-43de-a755-ac9f94438ba8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1004,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 180000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome/"
+      },
+      "version": "6.2.0"
+    }
+  }
 }

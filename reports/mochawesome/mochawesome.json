@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 2,
-    "passes": 2,
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2023-03-28T05:08:41.863Z",
-    "end": "2023-03-28T05:08:42.884Z",
-    "duration": 1021,
-    "testsRegistered": 2,
+    "start": "2023-03-30T13:48:41.576Z",
+    "end": "2023-03-30T13:48:47.099Z",
+    "duration": 5523,
+    "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,18 +18,57 @@
   },
   "results": [
     {
-      "uuid": "693ae2af-26d1-46f5-bdbe-2e7d922107aa",
+      "uuid": "7dc3afa5-40b0-4da1-823d-0934fbe2f89e",
       "title": "",
-      "fullFile": "/Users/gitameditha/Documents/test/AutomationApiMochaChai/api/test/validation_test.js",
-      "file": "/api/test/validation_test.js",
+      "fullFile": "",
+      "file": "",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "eeec332a-11ac-48a3-8584-341b4f5de068",
+          "uuid": "d018da80-138f-47f6-bb60-cb1cba9ed660",
+          "title": "@get As a User, I should be able to see data",
+          "fullFile": "/Users/gitameditha/Documents/interview/Indico/AutomationApiMochaChai/api/test/get_neows_test.js",
+          "file": "/api/test/get_neows_test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "@positive As a User, I want to see object near earth",
+              "fullTitle": "@get As a User, I should be able to see data @positive As a User, I want to see object near earth",
+              "timedOut": false,
+              "duration": 2427,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await page.getNeows(payload);\nassert(response.status).to.equal(200);\nassert(response.body).to.be.jsonSchema(schema);",
+              "err": {},
+              "uuid": "a71f7e99-459b-4df7-8a21-bb4fea3a1a5c",
+              "parentUUID": "d018da80-138f-47f6-bb60-cb1cba9ed660",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a71f7e99-459b-4df7-8a21-bb4fea3a1a5c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2427,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        },
+        {
+          "uuid": "d7901a4c-0a94-403c-af41-d202cf81f0b4",
           "title": "@getvalidationtag As a User, I should be able to see data",
-          "fullFile": "/Users/gitameditha/Documents/test/AutomationApiMochaChai/api/test/validation_test.js",
+          "fullFile": "/Users/gitameditha/Documents/interview/Indico/AutomationApiMochaChai/api/test/validation_test.js",
           "file": "/api/test/validation_test.js",
           "beforeHooks": [
             {
@@ -45,8 +84,8 @@
               "context": null,
               "code": "",
               "err": {},
-              "uuid": "24794423-ec0d-4137-ae7d-ac139313a665",
-              "parentUUID": "eeec332a-11ac-48a3-8584-341b4f5de068",
+              "uuid": "c2e57699-a495-46a2-81d3-1411958400eb",
+              "parentUUID": "d7901a4c-0a94-403c-af41-d202cf81f0b4",
               "isHook": true,
               "skipped": false
             }
@@ -57,7 +96,7 @@
               "title": "@get As a User, I should be able to see data schema",
               "fullTitle": "@getvalidationtag As a User, I should be able to see data @get As a User, I should be able to see data schema",
               "timedOut": false,
-              "duration": 193,
+              "duration": 2462,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -66,8 +105,8 @@
               "context": null,
               "code": "const response = await page.getValidation(payload);\nassert(response.status).to.equal(code.successOk);\n        assert(response.body).to.be.jsonSchema(schema);",
               "err": {},
-              "uuid": "fdee68cf-1a09-4dd4-8324-70145c2f7250",
-              "parentUUID": "eeec332a-11ac-48a3-8584-341b4f5de068",
+              "uuid": "ba6723f3-2432-4b26-a12f-c49913ed20ec",
+              "parentUUID": "d7901a4c-0a94-403c-af41-d202cf81f0b4",
               "isHook": false,
               "skipped": false
             },
@@ -75,7 +114,7 @@
               "title": "@post As user, I should be able to post data",
               "fullTitle": "@getvalidationtag As a User, I should be able to see data @post As user, I should be able to post data",
               "timedOut": false,
-              "duration": 811,
+              "duration": 620,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -84,21 +123,21 @@
               "context": null,
               "code": "const response = await page.postData(payload);\nassert(response.status).to.equal(code.successCreated);\n        assert(response.body).to.be.jsonSchema(schemaCreated);",
               "err": {},
-              "uuid": "4519b603-fea0-43de-a755-ac9f94438ba8",
-              "parentUUID": "eeec332a-11ac-48a3-8584-341b4f5de068",
+              "uuid": "8c30bda9-e596-433f-9b88-93bac2cf8957",
+              "parentUUID": "d7901a4c-0a94-403c-af41-d202cf81f0b4",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "fdee68cf-1a09-4dd4-8324-70145c2f7250",
-            "4519b603-fea0-43de-a755-ac9f94438ba8"
+            "ba6723f3-2432-4b26-a12f-c49913ed20ec",
+            "8c30bda9-e596-433f-9b88-93bac2cf8957"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1004,
+          "duration": 3082,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000

@@ -4,7 +4,7 @@ chai.use(require('chai-json-schema'));
 
 const page = require('../page/get_validation_page.js');
 const payload = require('../data/validation_data.json');
-const schema = require('../schema/Get_validation_schema.json');
+const schema = require('../schema/get_validation_schema.json');
 const schemaCreated = require('../schema/post_success_schema.json');
 const code = require('../helper/response_code_messages.json');
 

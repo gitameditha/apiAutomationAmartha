@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 2,
-    "tests": 3,
-    "passes": 3,
+    "suites": 3,
+    "tests": 5,
+    "passes": 5,
     "pending": 0,
     "failures": 0,
-    "start": "2023-03-30T13:48:41.576Z",
-    "end": "2023-03-30T13:48:47.099Z",
-    "duration": 5523,
-    "testsRegistered": 3,
+    "start": "2025-04-05T04:08:44.332Z",
+    "end": "2025-04-05T04:08:50.665Z",
+    "duration": 6333,
+    "testsRegistered": 5,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7dc3afa5-40b0-4da1-823d-0934fbe2f89e",
+      "uuid": "91763abc-3be1-4cbb-8bb7-b4a6aa85e872",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,117 +27,156 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d018da80-138f-47f6-bb60-cb1cba9ed660",
-          "title": "@get As a User, I should be able to see data",
-          "fullFile": "/Users/gitameditha/Documents/interview/Indico/AutomationApiMochaChai/api/test/get_neows_test.js",
-          "file": "/api/test/get_neows_test.js",
+          "uuid": "cee9e137-6b67-4729-892b-906595c8473d",
+          "title": "@post add pet data",
+          "fullFile": "/Users/gitamedithanirwanduna/Documents/soal_interview/AutomationApiMochaChai/api/test/add_pet_test.js",
+          "file": "/api/test/add_pet_test.js",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "@positive As a User, I want to see object near earth",
-              "fullTitle": "@get As a User, I should be able to see data @positive As a User, I want to see object near earth",
+              "title": "@positive As a User, I want to add pet data with pet name: Cat1",
+              "fullTitle": "@post add pet data @positive As a User, I want to add pet data with pet name: Cat1",
               "timedOut": false,
-              "duration": 2427,
+              "duration": 1197,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const response = await page.getNeows(payload);\nassert(response.status).to.equal(200);\nassert(response.body).to.be.jsonSchema(schema);",
+              "code": "const response = await page.addPet(data.addPet(petName));\nassert(response.status).to.equal(200);\nassert(response.body.name).to.equal(petName);\n\t\t\tassert(response.body).to.be.jsonSchema(schema);",
               "err": {},
-              "uuid": "a71f7e99-459b-4df7-8a21-bb4fea3a1a5c",
-              "parentUUID": "d018da80-138f-47f6-bb60-cb1cba9ed660",
+              "uuid": "8fbf0f8a-c3a1-4941-9d55-9e26cbac3938",
+              "parentUUID": "cee9e137-6b67-4729-892b-906595c8473d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "@positive As a User, I want to add pet data with pet name: Cat2",
+              "fullTitle": "@post add pet data @positive As a User, I want to add pet data with pet name: Cat2",
+              "timedOut": false,
+              "duration": 1156,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await page.addPet(data.addPet(petName));\nassert(response.status).to.equal(200);\nassert(response.body.name).to.equal(petName);\n\t\t\tassert(response.body).to.be.jsonSchema(schema);",
+              "err": {},
+              "uuid": "67b8b84f-7a97-4bb2-8104-b697896a9390",
+              "parentUUID": "cee9e137-6b67-4729-892b-906595c8473d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a71f7e99-459b-4df7-8a21-bb4fea3a1a5c"
+            "8fbf0f8a-c3a1-4941-9d55-9e26cbac3938",
+            "67b8b84f-7a97-4bb2-8104-b697896a9390"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2427,
+          "duration": 2353,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
         },
         {
-          "uuid": "d7901a4c-0a94-403c-af41-d202cf81f0b4",
-          "title": "@getvalidationtag As a User, I should be able to see data",
-          "fullFile": "/Users/gitameditha/Documents/interview/Indico/AutomationApiMochaChai/api/test/validation_test.js",
-          "file": "/api/test/validation_test.js",
-          "beforeHooks": [
-            {
-              "title": "\"before all\" hook: #hook in \"@getvalidationtag As a User, I should be able to see data\"",
-              "fullTitle": "@getvalidationtag As a User, I should be able to see data \"before all\" hook: #hook in \"@getvalidationtag As a User, I should be able to see data\"",
-              "timedOut": false,
-              "duration": 0,
-              "state": null,
-              "speed": null,
-              "pass": false,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "",
-              "err": {},
-              "uuid": "c2e57699-a495-46a2-81d3-1411958400eb",
-              "parentUUID": "d7901a4c-0a94-403c-af41-d202cf81f0b4",
-              "isHook": true,
-              "skipped": false
-            }
-          ],
+          "uuid": "24a4f98e-e2c9-4806-96b7-822731b42fad",
+          "title": "@getFindPetByStatus find pet By Status",
+          "fullFile": "/Users/gitamedithanirwanduna/Documents/soal_interview/AutomationApiMochaChai/api/test/get_find_pet_by_status.js",
+          "file": "/api/test/get_find_pet_by_status.js",
+          "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "@get As a User, I should be able to see data schema",
-              "fullTitle": "@getvalidationtag As a User, I should be able to see data @get As a User, I should be able to see data schema",
+              "title": "@get As a User, I want to find pet by status with status: available",
+              "fullTitle": "@getFindPetByStatus find pet By Status @get As a User, I want to find pet by status with status: available",
               "timedOut": false,
-              "duration": 2462,
+              "duration": 1819,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const response = await page.getValidation(payload);\nassert(response.status).to.equal(code.successOk);\n        assert(response.body).to.be.jsonSchema(schema);",
+              "code": "const response = await page.getFindPetByStatus({ status });\nassert(response.status).to.equal(code.successOk);\nassert(response.body).to.be.jsonSchema(schema); \nresponse.body.forEach((pet) => {\n    assert(pet.status).to.equal(status, `Pet ID ${pet.id} has incorrect status`);\n});",
               "err": {},
-              "uuid": "ba6723f3-2432-4b26-a12f-c49913ed20ec",
-              "parentUUID": "d7901a4c-0a94-403c-af41-d202cf81f0b4",
+              "uuid": "f3335f84-9e99-4fcf-a4ca-a0aeb049c11d",
+              "parentUUID": "24a4f98e-e2c9-4806-96b7-822731b42fad",
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "@post As user, I should be able to post data",
-              "fullTitle": "@getvalidationtag As a User, I should be able to see data @post As user, I should be able to post data",
+              "title": "@get As a User, I want to find pet by status with status: pending",
+              "fullTitle": "@getFindPetByStatus find pet By Status @get As a User, I want to find pet by status with status: pending",
               "timedOut": false,
-              "duration": 620,
+              "duration": 1162,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "const response = await page.postData(payload);\nassert(response.status).to.equal(code.successCreated);\n        assert(response.body).to.be.jsonSchema(schemaCreated);",
+              "code": "const response = await page.getFindPetByStatus({ status });\nassert(response.status).to.equal(code.successOk);\nassert(response.body).to.be.jsonSchema(schema); \nresponse.body.forEach((pet) => {\n    assert(pet.status).to.equal(status, `Pet ID ${pet.id} has incorrect status`);\n});",
               "err": {},
-              "uuid": "8c30bda9-e596-433f-9b88-93bac2cf8957",
-              "parentUUID": "d7901a4c-0a94-403c-af41-d202cf81f0b4",
+              "uuid": "de900261-3a0e-4a82-a1f8-82b96b9e7fee",
+              "parentUUID": "24a4f98e-e2c9-4806-96b7-822731b42fad",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ba6723f3-2432-4b26-a12f-c49913ed20ec",
-            "8c30bda9-e596-433f-9b88-93bac2cf8957"
+            "f3335f84-9e99-4fcf-a4ca-a0aeb049c11d",
+            "de900261-3a0e-4a82-a1f8-82b96b9e7fee"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3082,
+          "duration": 2981,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        },
+        {
+          "uuid": "23afc31b-ecce-4844-af17-3233d7c8ebb5",
+          "title": "@getFindPetById find pet By ID",
+          "fullFile": "/Users/gitamedithanirwanduna/Documents/soal_interview/AutomationApiMochaChai/api/test/get_pet_by_id.js",
+          "file": "/api/test/get_pet_by_id.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "@get As a User, I want to find pet by ID with spesific pet ID",
+              "fullTitle": "@getFindPetById find pet By ID @get As a User, I want to find pet by ID with spesific pet ID",
+              "timedOut": false,
+              "duration": 984,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await page.getPetById(petId);\nassert(response.status).to.equal(code.successOk); \nassert(response.body).to.be.jsonSchema(schema); \nassert(response.body.id).to.equal(petId, 'Pet ID does not match the requested ID');",
+              "err": {},
+              "uuid": "1dc53121-27ef-4b4f-ab9d-47b5cfb4e18f",
+              "parentUUID": "23afc31b-ecce-4844-af17-3233d7c8ebb5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1dc53121-27ef-4b4f-ab9d-47b5cfb4e18f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 984,
           "root": false,
           "rootEmpty": false,
           "_timeout": 180000
@@ -155,7 +194,7 @@
   ],
   "meta": {
     "mocha": {
-      "version": "10.2.0"
+      "version": "10.8.2"
     },
     "mochawesome": {
       "options": {

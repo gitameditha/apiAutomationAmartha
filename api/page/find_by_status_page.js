@@ -3,16 +3,13 @@ const supertest = require('supertest');
 const env = require('dotenv').config();
 const api = supertest(process.env.BASE_URL);
 
-const getValidation = (payload) =>
+const getFindPetByStatus = (params) =>
 	api
-		.get('/posts')
+		.get('/pet/findByStatus')
         .set('Content-Type', 'application/json')
+		.query(params)
         
-const postData = (payload) =>
-        api
-            .post('/posts')
-            .set('Content-Type', 'application/json')
 
 module.exports = {
-	getValidation, postData
+	getFindPetByStatus
 };

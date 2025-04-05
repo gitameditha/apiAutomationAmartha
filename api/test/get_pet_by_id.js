@@ -12,10 +12,10 @@ const testCase = {
     }
 };
 
-const petId = 2;
+const petId = 1;
 
 describe(`@getFindPetById ${testCase.describe}`, () => {
-    it(`@get ${testCase.positive.findById} with spesific pet ID`, async () => {
+    it(`${testCase.positive.findById} with spesific pet ID ${petId}`, async () => {
         const response = await page.getPetById(petId);
 
         assert(response.status).to.equal(code.successOk); 

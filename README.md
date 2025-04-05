@@ -21,7 +21,7 @@ npm install
 cp env.sample .env
 ```
 ```
-BASE_URL = https://jsonplaceholder.typicode.com
+BASE_URL = https://petstore.swagger.io/v2
 ```
     
 ## How To Run
@@ -52,8 +52,8 @@ report can be two type :
 - mochawesome.json : if we want consume that report and integrate it with dashboard like grafana etc,
 
 ## Notes
-- this project use Windows set up, so need to simple set up if wanna use unix
+- this project use mac set up, this runner script will will work on Windows if you are using a terminal that supports Unix-style paths, such as Git Bash, PowerShell, or Windows Subsystem for Linux (WSL).
 
 ## Answer the Question
-1. To make sure this end-point have correct data type I use Json schema
-2. To make sure this end-point get a correct response I use assertion
+1. To answer question 1 & 2, I use payload array and we can move the payload to add_pet_data.js if needed.
+2. To Answer question 3 & 4, I use payload array and we can move the payload to separated data file if needed.

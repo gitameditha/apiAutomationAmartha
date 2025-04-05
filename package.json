@@ -1,11 +1,11 @@
 {
-  "name": "bukalapak_api",
+  "name": "Amartha-API-Automation",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test-api": "node ./node_modules/mocha/bin/mocha ./api/test --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 180000",
-    "reports": "start '/reports/mochawesome/mochawesome.html'"
+    "reports": "open ./reports/mochawesome/mochawesome.html"
   },
   "devDependencies": {
     "chai": "^4.3.6",
